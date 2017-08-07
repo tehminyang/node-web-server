@@ -8,17 +8,17 @@ var app = express();
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
 
-app.use((request, response, next) => {
-    var now = new Date().toString();
-    var log = `${now}: ${request.method} ${request.url}`;
-    console.log(log);
-    fs.appendFile('server.log', log + '\n', (error) => {
-        if (error) {
-            console.log('error logging');
-        }
-    })
-    next();
-})
+// app.use((request, response, next) => {
+//     var now = new Date().toString();
+//     var log = `${now}: ${request.method} ${request.url}`;
+//     console.log(log);
+//     fs.appendFile('server.log', log + '\n', (error) => {
+//         if (error) {
+//             console.log('error logging');
+//         }
+//     })
+//     next();
+// })
 
 // No code is run after this middleware
 // app.use((request, response, next) => {
