@@ -23,7 +23,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top">Tim Yang</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,24 +53,79 @@
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
+                   <!--<img class="img-responsive" src="img/profile.png" alt="">-->
                     <div class="intro-text">
-                        <h1 class="name">Start Bootstrap</h1>
+                        <h1 class="name">Tim Yang</h1>
                         <hr class="star-light">
-                        <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+                        <span class="skills">From FINANCIAL Engineer to FULL STACK Engineer</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <!-- About Section -->
+    <section id="about">
+    {{!-- <section class="success" id="about"> --}}
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
+                    <h2>About</h2>
                     <hr class="star-primary">
+                    {{!-- <hr class="star-light"> --}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                   <h4>From FINANCIAL Engineer to FULL STACK Engineer</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>After working as a Financial Engineer for over 10 years, working on billion dollar deals and managing hundred million dollar portfolios for Private Equity Firms, Hedge Funds, REITs and Fintech firms, I am returning to my roots as a Full Stack Software Engineer.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>This site showcases my journey to return to my passion for technology and web development. I am learning the latest technologies, programming languages and tools, such as: JavaScript, Node.js, Express.js, HTML, CSS, npm, Git, Heroku, MongoDB, etc.</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <!--<a href="#" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"></i> Download Theme
+                    </a>-->
+                </div>
+                {{!-- <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h4>THE PROCESS</h4>
+                        <p>There are seemingly limitless resources to learn software engineering, but the criteria I used to select my resources are:
+                        <br>&#9632; Full JavaScript stack: Node, React, etc
+                        <br>&#9632; Hands-on teaching style
+                        <br>&#9632; Designed for intermediate level learners with programming background
+                        <br>&#9632; Instructors who are enthusiastic and have a sense of humor
+                        </p>
+                    </div>
+                </div> --}}
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h4>More about me and my work</h4>
+                        <p>
+                        <br>&#9642; <a href="https://github.com/tehminyang">GitHub</a>
+                        <br>&#9642; <a href="https://codepen.io/tehminyang">Codepen</a>
+                        <br>&#9642; <a href="https://www.linkedin.com/in/tehminyang">Linkedin</a>
+                        <br>&#9642; <a href="https://www.freecodecamp.org/tehminyang">FreeCodeCamp</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Portfolio Grid Section -->
+     <section id="portfolio" class="success">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio (COMING SOON)</h2>
+                    <hr class="star-light">
+                    {{!-- <hr class="star-primary"> --}}
                 </div>
             </div>
             <div class="row">
@@ -136,35 +191,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Contact Section -->
-    <section id="contact">
+    {{!-- <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -216,41 +248,46 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- Footer -->
     <footer class="text-center">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
+                    <div class="col-lg-12 text-center">
+                     <h2>Contact Me</h2>
+                        {{!-- <hr class="star-primary"> --}}
+                    </div>
+                </div>
+                <div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Location</h3>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
+                        <p>San Francisco Bay Area</p>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Around the Web</h3>
                         <ul class="list-inline">
-                            <li>
+                            {{!-- <li>
                                 <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                             <li>
                                 <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li> --}}
+                            <li>
+                                <a href="https://twitter.com/earnestTimmy" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/tehminyang/" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
+                            {{!-- <li>
                                 <a href="#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                        <h3>About the site</h3>
+                        <p>This site is built with JavaScript, Node.js, Express.js, HTML and CSS. <br>The website theme from <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
                     </div>
                 </div>
             </div>
