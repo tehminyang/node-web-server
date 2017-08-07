@@ -42,6 +42,13 @@ app.get('/', (request, response) => {
     });
 });
 
+app.get('/projects', (request, response) => {
+    response.render('projects.hbs', {
+        pageTitle: 'Projects Page',
+        message: 'A list of the different projects I worked on to learn full stack engineering.'
+    });
+});
+
 app.get('/about', (request, response) => {
     response.render('about.hbs', {
         pageTitle: 'About Page',
